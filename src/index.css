@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-light: #F6EFE4;
+    --color-sand: #EFE5D3;
+    --color-deep-blue: #1F4A5C;
+    --color-mist-blue: #DDEBF0;
+    --color-water-blue: #A9CBD6;
+    --color-gold: #C4A05A;
+    --color-gold-light: #E6D29B;
+    --color-gold-dark: #8F7030;
+    --color-text-dark: #26343B;
+    --color-text-light: #F6EFE4;
+    --color-text-footer: #6B6256;
+  }
+
+  body {
+    font-family: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+}
+
+/* Organic Blob Shapes specified in PRD */
+.blob-organic {
+  border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
+}
+
+.blob-hero {
+  border-radius: 54% 46% 62% 38% / 44% 56% 44% 56%;
+}
+
+.blob-card {
+  border-radius: 28px;
+}
+
+/* Subtle gold shimmer */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 160, 90, 0) 0%,
+    rgba(230, 210, 155, 0.4) 50%,
+    rgba(196, 160, 90, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: goldShimmer 6s infinite linear;
+}
+
+@keyframes waveSlow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-wave-slow {
+  animation: waveSlow 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

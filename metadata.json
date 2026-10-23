@@ -1,0 +1,6 @@
+{
+  "name": "AMARII Beauty Spa",
+  "description": "Site institucional delicado e sofisticado do AMARII Beauty Spa em Wilmington, MA. Depilação a laser, faciais e tratamentos corporais por Andreza Garcia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

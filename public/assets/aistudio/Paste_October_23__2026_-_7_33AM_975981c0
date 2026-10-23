@@ -1,0 +1,466 @@
+PRD – Site One Page Institucional: AMARII Beauty Spa (@amariibeautyspa)
+Cliente: AMARII Beauty Spa – Andreza Garcia (proprietária) • Depilação a laser, tratamentos faciais e corporais • Wilmington, MA, EUA 🇺🇸 Tipo: Site one page institucional, delicado, sofisticado, natural e aconchegante; otimizado para Google e IAs Idiomas: Português do Brasil (padrão) + opção clara de inglês no cabeçalho. Rodapé e modais legais em inglês. Agendamento: WhatsApp Destino: Google AI Studio (gerar o site completo a partir deste documento)
+1. Instrução principal para a IA
+Crie um site one page institucional para AMARII Beauty Spa, spa de beleza em Wilmington, Massachusetts, especializado em depilação a laser (LHR), tratamentos faciais e corporais. A dona, Andreza Garcia, é farmacêutica (mais de 10 anos de experiência e pós-graduação em farmácia estética no Brasil), hoje esteticista e electrologista licenciada nos EUA. O site deve transmitir delicadeza, natureza, aconchego, ciência e sofisticação. Use React + Tailwind CSS + Framer Motion (ou HTML/CSS/JS puro com IntersectionObserver), 100% responsivo (mobile-first, o público vem do Instagram) e acessível (WCAG 2.1 AA / ADA). Entregue o site completo, com todas as seções abaixo na ordem indicada.
+Regras de ouro
+1. Toda seção tem título + subtítulo de impacto (copy que cria conexão) e um botão de agendar.
+2. Todos os botões de agendar levam ao WhatsApp (seção 5) com mensagem pré-pronta.
+3. Todos os links de imagem devem ser usados exatamente como estão neste PRD.
+4. Cantos orgânicos, como ondas: nada de bordas quadradas rígidas.
+5. Valores em dólares (USD).
+6. Linguagem responsável (EUA/FTC): sem promessas absolutas (“garantido”, “sem dor”, “100%”, “queima X calorias”). Sempre “resultados variam de pessoa para pessoa”.
+7. PT-BR padrão com seletor EN visível (seção 4).
+2. Identidade visual
+Tema: natureza, água e renascimento (o nome Amarii significa “dom/propósito de Deus”). Curvas suaves, ondas, gotas e folhas em traço fino dourado.
+Paleta (dourado, azul e bege claro)
+• Bege claro #F6EFE4 e areia #EFE5D3
+• Azul profundo (petróleo/mar) #1F4A5C (seções de contraste, texto marfim)
+• Azul névoa #DDEBF0 e azul água #A9CBD6 (suaves, ondas e detalhes)
+• Dourado #C4A05A (principal), dourado claro #E6D29B (brilho), dourado antigo #8F7030
+• Texto sobre claro: #26343B; sobre azul profundo: #F6EFE4
+Alternância de fundos
+#
+Seção
+Fundo
+1
+Hero
+Bege claro
+–
+Faixa de palavras (marquee)
+Dourado e azul
+2
+Serviços
+Azul profundo
+3
+Galeria
+Areia
+4
+Sobre + Instagram
+Azul névoa
+5
+Feedbacks
+Bege claro
+6
+Espaço
+Azul profundo
+7
+Localização
+Bege claro
+8
+Agendamento
+Azul profundo
+9
+FAQ
+Bege claro
+10
+Rodapé
+Bege claro, texto discreto
+Estilo (orgânico, em ondas)
+• Divisores de seção em onda (SVG curvo) com a cor da seção seguinte; linha dourada fina acompanhando a curva.
+• Fotos com formas orgânicas (blob suave, ex.: border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%) com contorno dourado fino; hero em blob grande com segundo contorno dourado deslocado.
+• Cards com cantos bem arredondados (24–32px) e borda superior ondulada; botões em pílula com borda dourada.
+• Brilho suave: reflexo dourado lento sobre bordas e botões, pequenas gotas/estrelas discretas, ondas animadas lentamente no rodapé do hero.
+• Muito espaço em branco, texturas leves de papel, folhas em traço dourado como ornamento (alusivo à identidade dela).
+Tipografia (Google Fonts)
+• Títulos: Fraunces (suave e orgânica; palavras-chave em itálico dourado antigo)
+• Corpo e botões: Nunito Sans (rótulos em maiúsculas pequenas, espaçadas)
+• Logo: usar a imagem do logo (seção 6.6) no studio; na navbar, versão textual “AMARII” espaçado com “Beauty Spa” pequeno entre linhas douradas.
+Faixa de palavras (marquee) entre Hero e Serviços
+Barra em largura total, com borda superior e inferior em onda, fundo azul com texto dourado (ou dourado com texto azul), palavras passando em loop infinito, separadas por ✦: DEPILAÇÃO A LASER ✦ FACIAL ✦ CORPORAL ✦ SKIN CARE ✦ AQUA STAR ✦ BEM-ESTAR ✦ WILMINGTON, MA ✦ (EN: LASER HAIR REMOVAL ✦ FACIAL ✦ BODY ✦ SKIN CARE ✦ AQUA STAR ✦ WELLNESS ✦ WILMINGTON, MA ✦) Acessibilidade: pausa no hover e no foco, botão de pausar visível, e texto estático quando prefers-reduced-motion.
+3. Animações
+• Cada seção entra com fade-in + slide-up (uma vez), conteúdo interno em cascata.
+• Ondas dos divisores e do hero com movimento muito lento; linhas douradas que se desenham.
+• Hero: título linha a linha, foto com leve parallax.
+• Navbar transparente no topo, vira bege com borda dourada ao rolar.
+• Hover: zoom suave nas fotos, elevação nos cards.
+• prefers-reduced-motion respeitado; scroll suave.
+4. Idiomas (PT-BR + EN)
+• Padrão: português (BR). No cabeçalho, seletor PT | EN bem visível, em pílula com borda dourada e texto claro (“Read in English” / “Ler em português”), também no menu mobile (ao lado do hambúrguer).
+• Troca instantânea de todo o conteúdo, via translations.pt / translations.en, escolha em localStorage (com try/catch), <html lang> dinâmico (pt-BR / en-US).
+• Textos PT deste PRD são a versão final. Em EN, usar as versões dadas e traduzir fielmente o restante.
+• Rodapé, Privacy Policy e Terms of Service sempre em inglês.
+5. Dados e links (usar exatamente)
+• WhatsApp: número informado +1 (781) 692-7644 → https://wa.me/17816927644?text=<mensagem>. Guardar em whatsappPhone. (Confirmar que este número recebe WhatsApp.)
+• Instagram: https://www.instagram.com/amariibeautyspa/
+• Post sobre ela (seção Sobre): https://www.instagram.com/p/DO0nfXjlDl3/
+• Post do espaço (como chegar): https://www.instagram.com/p/DKaiGfpu0DJ/
+• Endereço: 230 Lowell Street, #1C, 2nd floor, Wilmington, MA 01887, United States
+• Política de cancelamento (original): Amarii Beauty Spa has a 20% cancellation fee. If you are unable to make the appointment, please kindly notify us as soon as possible to reschedule.
+• Horário de funcionamento (America/New_York):
+Dia
+Horário
+Segunda a quinta
+9:00 AM – 7:00 PM
+Sexta
+3:30 PM – 7:00 PM
+Sábado
+9:00 AM – 5:00 PM
+Domingo
+8:00 AM – 12:00 PM
+Mensagem padrão (PT): Olá, Amarii Beauty Spa! 💛 Vi o seu site e gostaria de agendar um horário. (EN: translate)
+⚠️ O texto original citava “Bellamour Beauty Spa” (provavelmente cópia de outro perfil). Usar sempre “AMARII Beauty Spa”.
+Tudo em um único objeto siteData.
+6. Seções (na ordem)
+Navbar (fixa)
+• Logo textual “AMARII · Beauty Spa”.
+• Links: Serviços · Galeria · Sobre · Avaliações · Espaço · Localização · FAQ (EN: Services · Gallery · About · Reviews · Studio · Location · FAQ)
+• Seletor PT | EN e botão dourado Agendar (WhatsApp).
+• Mobile: hambúrguer com painel bege de cantos ondulados. Link “Skip to content” para acessibilidade.
+6.1 Hero
+Layout: duas colunas; texto e cards à esquerda; foto à direita em forma orgânica (blob) com contorno dourado duplo. Foto: https://i.ibb.co/3yDHnQD3/Edit-photo-removing-text-shadows-2-K-20261023061254.webp
+• Eyebrow: LASER • FACIAL • CORPORAL • WILMINGTON, MA 🇺🇸
+• Título: Aposente a cera e a gilete: pele lisa, radiante e cuidada com ciência e carinho (EN: Retire the wax and the razor: smooth, radiant skin, cared for with science and warmth)
+• Subtítulo: Depilação a laser, tratamentos faciais e corporais em Wilmington, MA, com uma profissional licenciada, formada em farmácia estética e apaixonada por devolver a sua autoestima. (EN: Laser hair removal, facial and body treatments in Wilmington, MA, with a licensed professional trained in aesthetic pharmacy and passionate about restoring your confidence.)
+• Botões: Agendar meu horário (WhatsApp) · Ver serviços (#servicos)
+• Nota pequena: Resultados desde as primeiras sessões, que variam de pessoa para pessoa.
+Cards (cantos arredondados, borda dourada, ícone fino):
+• 📍 Wilmington, MA: 230 Lowell St, 2nd floor (clicável, abre o Google Maps)
+• 🎖️ Profissional licenciada: esteticista e electrologista
+• 🎁 Consulta gratuita: avaliação personalizada de 30 min
+6.2 Serviços (nome, foto, descrição e valor)
+• Título: Cuidados que renovam a pele e o corpo (EN: Care that renews skin and body)
+• Subtítulo: Do laser ao facial, escolha o tratamento ideal e conte com uma profissional que entende de ciência e de cuidado. (EN: From laser to facials, choose your ideal treatment with a professional who understands science and care.)
+Ofertas especiais (faixa de destaque no topo da seção, cartões de cantos ondulados, com botão para o WhatsApp):
+• 🌟 Lançamento Aqua Star: 10 tratamentos em 1 para uma pele mais limpa, hidratada e radiante. Escolha até 2 handpieces. Somente para as 10 primeiras clientes. De $149.90 por $99.90.
+• 🎁 Sessão de laser gratuita: Promoção especial para novas clientes, apenas 10 vagas.
+• Controlar com siteData.promos[i].enabled e endsAt; esconder quando acabar. (Confirmar com a Andreza as regras: promoções gratuitas exigem divulgar condições e prazo.)
+Layout: abas ou grupos com chips: Faciais e Estéticos · Corporais e Massagens · Depilação a Laser · Consulta. Cada serviço em card (grid 2 colunas desktop, 1 mobile) com foto, nome, descrição curta, valor em destaque dourado, duração (ícone de relógio, texto pequeno) e botão Agendar (WhatsApp, mensagem com o nome do serviço).
+⚠️ Fotos dos serviços: não foram enviadas fotos por serviço. Usar uma foto por grupo (repetida nos cards do grupo, em formato blob pequeno) e guardar em siteData.services[i].image para troca fácil: Faciais → https://i.ibb.co/X6YTwWm/Editing-photo-environment-2-K-20261023070234.webp · Corporais → https://i.ibb.co/mC3YMPGq/Editing-environment-photo-quality-2-K-20261023070441.webp · Laser → https://i.ibb.co/QB5sw2J/Compare-before-and-after-photos-2-K-20261023063506.webp · Consulta → https://i.ibb.co/m5zRNSSv/Edit-environment-photo-quality-2-K-20261023070455.webp Confirmar com a Andreza se essas fotos representam bem cada grupo.
+Faciais e Estéticos
+Serviço (PT / EN)
+Descrição
+Valor
+Tempo
+Aqua Star (lançamento)
+10 tratamentos em 1 para uma pele mais limpa, hidratada e radiante, personalizado conforme a necessidade da sua pele.
+$99.90 (de $149.90)
+–
+Limpeza de pele profunda / Deep Cleansing
+Limpa profundamente, com vapor de ozônio e alta frequência, máscara personalizada e finalização com cremes, séruns e protetor solar. Pele fresca e radiante.
+$120
+90 min
+Dermaplaning
+Esfolia a superfície da pele, remove os pelos finos (vellus) e melhora a absorção dos produtos de skincare. Com Andreza Garcia.
+$70
+45 min
+Facial Iluminador com Vitamina C / Vitamin C Brightening
+Foco em pigmentação, aspecto opaco e tom irregular, para uma tez luminosa.
+$90
+60 min
+Glass Peel LHA LA
+Peeling de nova geração inspirado nos rituais coreanos, para o “efeito pele de vidro”: poros, oleosidade e tom mais uniforme, geralmente sem descamação e sem tempo de recuperação.
+$180
+60 min
+Facial Firmlift
+Séruns potentes, cremes e máscaras para estimular colágeno e elasticidade, com efeito lifting e pele mais firme.
+$90
+60 min
+Facial para Acne / Acne Facial
+Remove pontos negros e impurezas, ajuda a controlar oleosidade e inflamação e purifica os poros.
+$90
+60 min
+Hyaluronic Glow Facial
+Limpeza focada em hidratação com ácido hialurônico: pele macia, preenchida e radiante.
+$90
+60 min
+Drenagem Linfática Facial com Gua Sha
+Técnica suave que estimula a circulação e reduz o inchaço, com contorno mais definido e pele luminosa.
+$80
+45 min
+Microneedling RF
+Microagulhamento com radiofrequência para estimular colágeno, suavizar linhas finas e melhorar a firmeza e a textura da pele.
+$210
+60 min
+Hydragloss (labial)
+Hidrata profundamente e realça o brilho natural dos lábios, deixando-os macios e radiantes.
+$80
+60 min
+Terapia para Crescimento Capilar / Hair Regrowth Therapy
+Terapia voltada ao estímulo e ao fortalecimento do cabelo, após avaliação.
+$150
+60 min
+Pink Touch
+Tratamento não invasivo para manchas escuras em zonas íntimas, indicado após avaliação.
+$120
+40 min
+Corporais e Massagens
+Serviço (PT / EN)
+Descrição
+Valor
+Tempo
+Escape Tranquilidade / Tranquility Escape
+Refúgio relaxante com óleos essenciais, esfoliante renovador para os pés e vela morna para relaxamento profundo e hidratação.
+$90
+60 min
+Limpeza das Costas / Back Cleansing
+Limpeza profunda que esfolia, desintoxica e hidrata, cuidando de poros obstruídos, acne e ressecamento.
+$140
+60 min
+Massagem com Pedras Quentes / Hot Stone Massage
+Pedras aquecidas em pontos específicos para relaxamento profundo, alívio da tensão muscular e melhor circulação.
+$120
+60 min
+Bodysculpt (remodelação corporal)
+Combina ultrassom, vacuoterapia e radiofrequência, voltado a gordura localizada, celulite e flacidez, para pele mais lisa e firme. Resultados variam.
+$90
+60 min
+Massagem Modeladora Detox / Detox Sculpting Massage
+Terapia suave e potente que ajuda a reduzir o inchaço e aumentar a circulação, deixando o corpo mais leve e equilibrado.
+$110
+60 min
+Manta Térmica Infravermelha / Infrared Sauna Blanket
+Calor infravermelho que promove relaxamento e transpiração. Ótimo complemento para rotinas de bem-estar.
+$40
+30 min
+⚠️ A descrição original da manta prometia “queimar 300 a 600 calorias”. Foi removida: alegações de emagrecimento são de risco com a FTC.
+Depilação a Laser (LHR)
+Serviço (PT / EN)
+Descrição
+Valor
+Tempo
+Sessão de laser gratuita / Free laser session
+Promoção especial para novas clientes, apenas 10 vagas.
+$0+
+15+ min
+Pacote 3 áreas / 3-Area Package
+Escolha 3 áreas por preço fixo, economizando até 50% ou mais.
+$150
+60 min
+Área extra pequena / Extra Small
+Buço, queixo, patilhas, dedos das mãos ou dos pés.
+A partir de $30
+15 min
+Área pequena / Small
+Axilas, linha do abdômen (linha alba), nuca, patilhas, linha do biquíni.
+$70
+20 min
+Área média / Medium
+Rosto completo, virilha completa (Brazilian), abdômen, ombros, peito superior, meio braço, meia coxa, glúteos.
+$90
+30 min
+Áreas grandes / Large
+Pernas inteiras, costas inteiras, combo peito + abdômen completo, braços inteiros.
+$120
+40 min
+Corpo inteiro / Full Body
+Até 6 áreas.
+A partir de $249.90
+90+ min
+Texto de abertura do grupo Laser: Depilação a laser segura e eficaz, com redução gradual dos pelos e resultados desde as primeiras sessões, que variam de pessoa para pessoa. Chip: Profissional licenciada.
+Consulta
+Serviço
+Descrição
+Valor
+Tempo
+Consulta / Avaliação / Consultation
+Avaliação personalizada para analisar necessidades, objetivos e condições da pele ou do corpo, criando um plano de tratamento seguro e eficaz.
+$0
+30 min
+Nota geral (pequena, sob os cards): Valores em USD, sujeitos a alteração. Todos os tratamentos são precedidos de avaliação. Os resultados variam de pessoa para pessoa. (EN: translate)
+Botão da seção: Agendar meu horário.
+6.3 Galeria
+• Título: Resultados que contam a sua própria história (EN: Results that tell their own story)
+• Subtítulo: Comparações de antes e depois de tratamentos reais no Amarii. (EN: Before-and-after comparisons from real treatments at Amarii.)
+Regra: nenhum título ou texto sobre as fotos. Grid orgânico (3×2 desktop, 2 mobile), fotos com cantos arredondados e contorno dourado; hover só com zoom suave. Ao clicar, abre expandida em lightbox (tela cheia, fundo azul-escuro translúcido, setas esquerda/direita, X, contador “3 / 6”, teclado, swipe, foco preso, aria-label descritivo).
+Fotos (6):
+1. https://i.ibb.co/QB5sw2J/Compare-before-and-after-photos-2-K-20261023063506.webp
+2. https://i.ibb.co/YTystFm1/Edit-comparison-photos-2-K-20261023063221.webp
+3. https://i.ibb.co/3mf2mj38/Editing-photo-comparison-2-K-20261023062114.webp
+4. https://i.ibb.co/p6cd8qs6/Compare-photos-before-and-after-2-K-20261023062851.webp
+5. https://i.ibb.co/QvBtk0ss/Edit-comparison-photos-2-K-20261023062916.webp
+6. https://i.ibb.co/TDZ911nC/Edit-comparison-photos-2-K-20261023063154.webp
+Nota abaixo do grid (fora das fotos): Resultados individuais variam. Imagens publicadas com consentimento das clientes. Botão: Quero resultados assim.
+6.4 Sobre + Instagram
+Layout (Sobre): duas colunas; foto dela em forma orgânica com contorno dourado; ao lado, título, frase e parágrafos. Foto: https://i.ibb.co/G4C5R01R/Edit-photo-and-improve-quality-2-K-20261023064331.webp
+• Título: Conheça a Andreza Garcia (EN: Meet Andreza Garcia)
+• Subtítulo: Mais que um nome, um propósito: ciência e beleza juntas para cuidar de você. (EN: More than a name, a purpose: science and beauty together to care for you.)
+• Frase (serifada itálica, aspas douradas; frase real do Instagram dela): “A estética, para mim, não é apenas uma área de atuação, é um propósito de vida.” — Andreza Garcia
+• Parágrafo 1 (emocional): Amarii significa “dom divino”, “promessa de Deus”: um nome que traz fé, proteção e esperança. Ao escolher a Amarii, você escolhe uma experiência de renascimento, bem-estar e autoestima. Para a Andreza, os resultados vão além da técnica: são um dom que ela realiza com amor e gratidão.
+• Parágrafo 2 (técnico): Farmacêutica com mais de 10 anos de experiência e pós-graduada em farmácia estética no Brasil, a Andreza trabalhou 3 anos em farmácia de manipulação, onde aprofundou o conhecimento sobre substâncias e cosméticos. Hoje, como esteticista e electrologista licenciada nos Estados Unidos, é apta a trabalhar com Laser Hair Removal, uma das suas principais especialidades. Com olhar clínico, sabe interpretar rótulos, avaliar a qualidade dos produtos e oferecer orientações seguras para você cuidar da pele com confiança.
+• Selos (chips dourados, sem números inventados): +10 anos de experiência · Pós em Farmácia Estética · Esteticista licenciada · Electrologista licenciada · Especialista em Laser Hair Removal
+• Linha discreta (só exibe se preenchida em siteData): Licenses: Esthetician No. [ ] · Electrologist No. [ ]
+⚠️ A formação de farmacêutica é do Brasil: no site, não sugerir licença de farmacêutica nos EUA. Confirmar o texto com a Andreza.
+Botão: Agendar com a Andreza.
+Instagram (sub-bloco, mesmo fundo azul névoa, com divisor em onda):
+• Subtítulo: Acompanhe a rotina do Amarii (EN: Follow life at Amarii) · Bastidores, dicas de cuidado e novidades, todos os dias. (EN: Behind the scenes, care tips and news, every day.)
+• @amariibeautyspa com botão Seguir no Instagram (https://www.instagram.com/amariibeautyspa/, nova aba).
+• Post integrado, reproduzível no próprio site: https://www.instagram.com/p/DO0nfXjlDl3/ via embed oficial (iframe https://www.instagram.com/p/DO0nfXjlDl3/embed), centralizado, moldura orgânica dourada, largura máx. ~400px. Sem capa, thumbnail ou imagem de pré-visualização personalizada.
+Botões: Seguir @amariibeautyspa · Agendar.
+6.5 Feedbacks (6, com 5 estrelas)
+• Título: Quem passa por aqui, volta mais leve (EN: Those who visit leave feeling lighter)
+• Subtítulo: Palavras de clientes que escolheram o Amarii para se cuidar. (EN: Words from clients who chose Amarii to care for themselves.)
+Grid 3×2 (desktop) ou carrossel (mobile, com pausa e setas), cards orgânicos com borda dourada, 5 estrelas douradas, aspas decorativas, texto, nome e tratamento.
+⚠️ Todos são textos de exemplo. Nos EUA, a FTC proíbe avaliações falsas: substituir por avaliações reais (Instagram, Google, WhatsApp), com autorização das clientes, antes de publicar.
+#
+Nome
+Tratamento
+Depoimento
+1
+Camila R.
+Laser (corpo)
+“Adorei o atendimento. A Andreza explica tudo com calma e passa muita segurança.”
+2
+Sophie M.
+Glass Peel
+“Minha pele ficou luminosa e macia. Ambiente lindo e aconchegante.”
+3
+Fernanda L.
+Pacote 3 áreas
+“Melhor decisão aposentar a lâmina. Atendimento impecável!”
+4
+Juliana P.
+Facial Firmlift
+“Saí de lá renovada. Cuidado e carinho em cada detalhe.”
+5
+Emma T.
+Dermaplaning
+“Lovely studio and a very caring professional. I’ll definitely be back.”
+6
+Mariana S.
+Massagem
+“Um momento só meu, em paz. Super recomendo.”
+Botão: Quero viver essa experiência.
+6.6 Espaço
+• No início da seção, o logo do studio (centralizado, tamanho médio, moldura orgânica): https://i.ibb.co/6JnD0NvZ/Improve-photo-quality-2-K-20261023071533.webp
+• Título: Um espaço criado para você desacelerar e se renovar (EN: A space created for you to slow down and renew)
+• Subtítulo: Segurança, tecnologia e aconchego em um ambiente reservado para o seu bem-estar. (EN: Safety, technology and comfort in a private space for your well-being.)
+• Frase do studio (serifada itálica, aspas douradas): “Aqui, cada atendimento é um recomeço: um momento para respirar, se cuidar e se sentir bem na sua própria pele.” (Texto de exemplo: a Andreza deve aprovar.) (EN: translate)
+• Cards (cantos orgânicos, borda dourada, ícone fino), grid 3×2: Segurança e higiene (protocolos rigorosos, profissional licenciada) · Alta tecnologia (equipamentos modernos de laser e estética) · Fácil acesso (Lowell St, Wilmington, de fácil chegada) · Privacidade (atendimento reservado) · Conforto (ambiente calmo e acolhedor) · Atenção exclusiva (planos personalizados).
+• Carrossel infinito de fotos do espaço (loop contínuo, autoplay lento, botão de pausa, setas laterais), formas orgânicas com contorno dourado. Ao clicar, abre expandida (lightbox) com seta para passar, X, teclado e swipe. Fotos (5):
+    1. https://i.ibb.co/wr3tVX3b/580730826-18539986528005588-4056669522031287829-n.webp
+    2. https://i.ibb.co/X6YTwWm/Editing-photo-environment-2-K-20261023070234.webp
+    3. https://i.ibb.co/mC3YMPGq/Editing-environment-photo-quality-2-K-20261023070441.webp
+    4. https://i.ibb.co/m5zRNSSv/Edit-environment-photo-quality-2-K-20261023070455.webp
+    5. https://i.ibb.co/XxSWDHCJ/Editing-environment-photo-quality-2-K-20261023071019.webp
+• Como chegar (vídeo integrado): https://www.instagram.com/p/DKaiGfpu0DJ/ via embed oficial (iframe https://www.instagram.com/p/DKaiGfpu0DJ/embed), com título pequeno Veja como chegar (EN: See how to get here), moldura orgânica dourada, largura máx. ~400px. Sem capa nem imagem de pré-visualização personalizada.
+Botão: Agendar minha visita.
+6.7 Localização
+• Título: Encontre o seu cantinho de bem-estar (EN: Find your little corner of well-being)
+• Subtítulo: Estamos em Wilmington, MA, prontos para receber você. (EN: We are in Wilmington, MA, ready to welcome you.)
+• Card de endereço: 230 Lowell Street, #1C, 2nd floor, Wilmington, MA 01887, United States + botão Como chegar (https://www.google.com/maps/dir/?api=1&destination=230+Lowell+St+Wilmington+MA+01887).
+• Google Maps integrado: <iframe> (https://www.google.com/maps?q=230+Lowell+St+Wilmington+MA+01887&output=embed), largura total, moldura orgânica dourada, loading="lazy", title, altura 380–450px.
+• Horário de funcionamento (card, horários da seção 5, dia atual destacado no fuso America/New_York, estado “Aberto agora / Fechado”).
+• Linha opcional: Estacionamento: [ ] (se preenchida).
+Botão: Agendar meu horário.
+6.8 Agendamento + educação
+• Título: Vamos transformar a sua beleza juntas? (EN: Shall we transform your beauty together?)
+• Subtítulo: Conte o que você deseja e agende o seu atendimento pelo WhatsApp em poucos passos. (EN: Tell us what you want and book your appointment on WhatsApp in a few steps.)
+Layout em 2 colunas (fundo azul profundo, cards bege com cantos orgânicos e borda dourada). Esquerda: 4 passos numerados (números em dourado). Direita: mini formulário.
+Passos:
+• 01 · Escolha o serviço. Veja os tratamentos e escolha o que deseja, ou comece pela consulta gratuita.
+• 02 · Conte a sua expectativa. Explique o resultado que deseja e o que mais te incomoda.
+• 03 · Informe a sua saúde. Avise sobre gravidez, medicações, bronzeado recente e condições de pele. Para laser, venha com a área aparada, conforme orientação.
+• 04 · Escolha dia e horário. Indique o melhor dia e horário dentro do nosso funcionamento e receba a confirmação pelo WhatsApp.
+Política de cancelamento (card discreto, ícone de calendário): Sabemos que imprevistos acontecem. Cancelamentos têm uma taxa de 20%. Se não puder comparecer, avise o quanto antes para reagendarmos. (EN: We understand that things come up. Cancellations carry a 20% fee. If you can’t make it, please let us know as soon as possible so we can reschedule.)
+⚠️ Orientações de preparo do laser (aparar, evitar sol/bronzeado, etc.) são exemplos: a Andreza deve confirmar o protocolo.
+Mini formulário (sem <form>, usar onClick/onChange; todos os campos com <label> visível e erros acessíveis):
+• Como gostaria de ser chamada(o)? (texto)
+• Serviço de interesse (lista dos serviços da seção 6.2, mais “Ainda não sei, quero consulta”)
+• Qual a sua expectativa? (texto)
+• Melhor dia (campo de data) e melhor horário (seleção dentro do funcionamento)
+• É a sua primeira vez conosco? (Sim / Não)
+• Algo que devemos saber? (gravidez, medicações, bronzeado recente; opcional)
+Pré-visualização da mensagem em tempo real, com Copiar mensagem e Enviar pelo WhatsApp (abre https://wa.me/17816927644?text= + mensagem com encodeURIComponent, nova aba).
+Modelo (PT): Olá, Amarii Beauty Spa! 💛 Gostaria de agendar um horário. Nome: {nome} Serviço: {serviço} Expectativa: {expectativa} Melhor dia e horário: {dia} {horário} Primeira vez: {sim/não} Observações: {obs} (EN: traduzir naturalmente)
+6.9 FAQ (accordion acessível, bordas orgânicas douradas)
+• Título: Perguntas frequentes (EN: Frequently asked questions)
+• Subtítulo: Tudo o que você precisa saber antes de agendar. (EN: Everything you need to know before booking.)
+1. Como faço para agendar? Pelo WhatsApp: preencha o mini formulário e envie a mensagem. A confirmação é feita por lá.
+2. A profissional é licenciada? Sim. A Andreza é esteticista e electrologista licenciada, apta a trabalhar com Laser Hair Removal.
+3. Como funciona a depilação a laser? O laser atua nos folículos para reduzir os pelos gradualmente, em sessões planejadas. O plano é definido na avaliação.
+4. Quantas sessões preciso? Depende da área, do tipo de pelo e da pele. Os resultados variam de pessoa para pessoa.
+5. Dói? A sensação varia de pessoa para pessoa. A Andreza explica o processo e ajusta o atendimento para o seu conforto.
+6. Como me preparo para o laser? Venha com a área aparada e evite sol e bronzeamento, conforme orientação. Informe medicações, gravidez e condições de pele.
+7. Quais áreas posso tratar? Rosto, axilas, virilha, pernas, braços, costas, abdômen, glúteos e corpo inteiro (ver tabela de valores).
+8. Como funciona a sessão de laser gratuita? É uma promoção para novas clientes, com 10 vagas. Consulte as condições pelo WhatsApp.
+9. O que é o Aqua Star? Um tratamento facial 10 em 1 que combina até 2 handpieces, personalizado conforme a sua pele. Oferta de lançamento para as 10 primeiras clientes.
+10. Qual a política de cancelamento? Há uma taxa de 20% para cancelamentos. Avise o quanto antes para reagendarmos.
+11. Qual o horário de funcionamento? Seg–qui 9 AM–7 PM; sex 3:30 PM–7 PM; sáb 9 AM–5 PM; dom 8 AM–12 PM.
+12. Onde fica o studio? 230 Lowell Street, #1C, 2nd floor, Wilmington, MA 01887.
+13. Quais formas de pagamento? (Confirmar com a Andreza.)
+Botão final: Agendar meu horário.
+6.10 Rodapé (EUA, minimalista, discreto e acessível; em inglês)
+Visual: fundo bege claro (continuando a seção FAQ), linha dourada fina no topo, tipografia pequena (text-xs/text-sm), centralizado. Cor do texto de baixo contraste visual, mas com razão de contraste mínima de 4.5:1 (WCAG AA), ex.: #6B6256 sobre #F6EFE4 (~5.3:1). Links com foco visível e sublinhado ao hover/foco.
+• Linha 1 (copyright): © 2026 [Professional Name]. All rights reserved.
+• Linha 2 (links lado a lado, texto acessível): Privacy Policy · Terms of Service, abrindo modais na mesma página (ou páginas simples).
+• Linha opcional pequena (só exibe se preenchida): Licensed Esthetician No. [ ] · Licensed Electrologist No. [ ].
+6.11 Modais legais (em inglês)
+Modal acessível: fundo bege, borda dourada orgânica, botão X, Esc e clique fora fecham, rolagem interna, foco preso, role="dialog" e aria-modal.
+⚠️ Texto-modelo. Deve ser revisado pela profissional (e, de preferência, por um advogado) antes de publicar.
+Privacy Policy:
+• Who we are: AMARII Beauty Spa, 230 Lowell Street, #1C, Wilmington, MA 01887; contact [E-mail/phone].
+• Information we collect: name, phone number, service of interest, preferred times, messages sent via the booking form and WhatsApp; health-related information you choose to share (pregnancy, medications, skin conditions, recent sun exposure); photos only with your consent.
+• How we use it: to schedule and provide services, respond to enquiries and keep appropriate client records. We do not sell personal information.
+• Third parties: WhatsApp (Meta), Instagram and Google Maps embeds, which may collect data under their own policies.
+• Security and retention: reasonable safeguards (including as required by Massachusetts data-security rules); kept only as long as needed ([period]).
+• Your choices: access, correction or deletion on request; opt out of marketing messages.
+• Children: the site is not directed to children under 13.
+• Contact: [E-mail].
+Terms of Service:
+• Content is for general information and is not medical advice; services are provided after an assessment and subject to suitability.
+• Services are performed by licensed professionals; clients must disclose relevant health information honestly.
+• Cancellation policy: a 20% cancellation fee applies; please notify us as soon as possible to reschedule.
+• Prices are in USD and may change; promotions are limited and may end without notice.
+• Results vary and are not guaranteed.
+• Liability limited to the extent permitted by law; governing law: the Commonwealth of Massachusetts.
+• Accessibility: we aim to meet WCAG 2.1 AA; contact us if you need assistance.
+7. Botão flutuante
+Canto inferior direito, dourado, ícone de WhatsApp e texto Agendar, com brilho suave, visível após o hero, tamanho mínimo de toque 44×44px.
+8. SEO interno (Google + IAs, mercado dos EUA)
+Técnico
+• <html lang> dinâmico; âncoras #servicos, #galeria, #sobre, #avaliacoes, #espaco, #localizacao, #agendamento, #faq.
+• Title EN: “AMARII Beauty Spa | Laser Hair Removal, Facials & Body Treatments in Wilmington, MA”. Title PT: “AMARII Beauty Spa | Depilação a Laser e Estética Brasileira em Wilmington, MA”.
+• Meta description PT (~155 car.): “Depilação a laser, facial e tratamentos corporais em Wilmington, MA, com profissional licenciada. Agende a sua consulta gratuita.” EN equivalente.
+• Um único <h1>, <h2> por seção, HTML semântico, alt descritivo bilíngue, loading="lazy" (exceto hero), width/height, Open Graph e Twitter Card (foto do hero), canonical, hreflang pt-BR / en-US.
+• Favicon: o logo do studio (link na seção 6.6) recortado, apple-touch-icon 180×180.
+• Arquivos: robots.txt, sitemap.xml e llms.txt (resumo factual para IAs).
+Dados estruturados (JSON-LD)
+• HealthAndBeautyBusiness (ou DaySpa/BeautySalon): nome, endereço completo, telephone +17816927644, openingHoursSpecification, sameAs (Instagram), priceRange, founder (Person: Andreza Garcia, jobTitle Licensed Esthetician & Electrologist) e hasOfferCatalog com os serviços e preços em USD.
+• FAQPage com o FAQ. Review apenas com depoimentos reais.
+Para IAs recomendarem (GEO)
+• Bloco discreto “Em resumo / At a glance” (fim da seção Sobre ou rodapé): AMARII Beauty Spa é um spa de beleza em Wilmington, Massachusetts, especializado em depilação a laser, facial e tratamentos corporais, com atendimento em português e inglês. Fundado por Andreza Garcia, farmacêutica (10+ anos de experiência), esteticista e electrologista licenciada nos EUA.
+• Respostas curtas e diretas no início de cada FAQ (resposta primeiro, detalhe depois).
+• Mesma identidade (nome, endereço, telefone) escrita sempre igual no site, Instagram e Google Business Profile (recomendação fora do site).
+• Palavras-chave naturais no copy: laser hair removal Wilmington MA, Brazilian wax alternative, Brazilian esthetician Massachusetts, esteticista brasileira Massachusetts, facial Wilmington MA, microneedling RF, glass peel, Hydragloss, bodysculpt, dermaplaning, e cidades próximas (Burlington, Woburn, Reading, Tewksbury, Andover, Billerica, Lowell, North Reading).
+Acessibilidade (ADA / WCAG 2.1 AA): contraste mínimo 4.5:1 (inclusive no rodapé), foco visível, navegação por teclado, link “skip to content”, alt em todas as imagens, labels nos campos, controle de pausa em marquee e carrosséis, lightbox e modais com foco preso, alvos de toque de 44px, texto redimensionável até 200%, prefers-reduced-motion.
+9. Resumo de CTAs (todos para o WhatsApp)
+Seção
+Botão
+Navbar e flutuante
+Agendar
+Hero
+Agendar meu horário · Ver serviços (#servicos)
+Serviços
+Agendar (por card, com o nome do serviço) · ofertas · Agendar meu horário
+Galeria
+Quero resultados assim
+Sobre + Instagram
+Agendar com a Andreza · Seguir @amariibeautyspa (Instagram)
+Feedbacks
+Quero viver essa experiência
+Espaço
+Agendar minha visita
+Localização
+Como chegar (Google Maps) · Agendar meu horário
+Agendamento
+Enviar pelo WhatsApp · Copiar mensagem
+FAQ
+Agendar meu horário
+Rodapé
+(links legais; CTA discreto opcional)
+10. Checklist de aceitação
+[ ] 9 seções + rodapé na ordem correta; todas com título e subtítulo, e botão de agendar
+[ ] Paleta bege claro, azul e dourado, com bordas orgânicas em onda e divisores curvos
+[ ] Faixa de palavras em loop infinito entre o Hero e os Serviços, com botão de pausa
+[ ] Hero com foto em forma orgânica e cards de localização, licença e consulta gratuita
+[ ] Serviços completos (27 itens + ofertas Aqua Star e laser grátis) com nome, foto, descrição e valor em USD
+[ ] Galeria de 6 fotos clicáveis (lightbox com setas), sem título sobre as fotos
+[ ] Sobre com foto, frase entre aspas, história dela e post DO0nfXjlDl3 integrado sem capa
+[ ] 6 feedbacks com 5 estrelas (substituir por reais)
+[ ] Espaço com logo no início, frase, 6 cards, carrossel infinito de 5 fotos clicáveis e post DKaiGfpu0DJ integrado sem capa
+[ ] Localização com Google Maps, endereço e horário
+[ ] Agendamento com 4 passos, política de cancelamento (20%), mini formulário e envio ao WhatsApp
+[ ] FAQ em accordion; rodapé com copyright, Privacy Policy e Terms of Service, contraste mínimo 4.5:1
+[ ] Seletor PT | EN claro no cabeçalho; textos legais em inglês
+[ ] SEO interno, JSON-LD, FAQPage, llms.txt e bloco “At a glance”
+[ ] 100% responsivo e acessível (WCAG 2.1 AA), animações ao rolar
