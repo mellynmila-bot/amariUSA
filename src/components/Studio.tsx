@@ -63,7 +63,8 @@ export const Studio: React.FC = () => {
               alt="Logo oficial AMARII Beauty Spa"
               referrerPolicy="no-referrer"
               className="w-full h-full object-contain rounded-[58%_42%_55%_45%_/_50%_58%_42%_50%]"
-              loading="lazy"
+              loading="eager"
+              decoding="async"
             />
           </div>
         </div>
@@ -159,7 +160,8 @@ export const Studio: React.FC = () => {
                         alt={img.alt}
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
+                        loading="eager"
+                        decoding="async"
                       />
                       {/* Mobile subtle corner zoom indicator + Desktop hover overlay */}
                       <div className="absolute bottom-2.5 right-2.5 sm:hidden p-1.5 rounded-full bg-[#1F4A5C]/85 border border-[#C4A05A]/70 text-[#E6D29B] shadow-md pointer-events-none">

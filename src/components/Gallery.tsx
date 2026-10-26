@@ -74,7 +74,8 @@ export const Gallery: React.FC = () => {
                   src={img.url}
                   alt={img.alt}
                   referrerPolicy="no-referrer"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
                 />
 

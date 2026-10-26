@@ -43,6 +43,8 @@ export const Hero: React.FC = () => {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
                   />
 
                   {/* Delicate subtle gold sheen overlay */}

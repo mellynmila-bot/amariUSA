@@ -148,7 +148,8 @@ export const Services: React.FC = () => {
                         alt={lang === 'pt' ? service.namePt : service.nameEn}
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
-                        loading="lazy"
+                        loading="eager"
+                        decoding="async"
                       />
                     </div>
 

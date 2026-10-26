@@ -44,7 +44,8 @@ export const About: React.FC = () => {
                   }
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
               </div>
