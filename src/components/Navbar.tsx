@@ -46,22 +46,22 @@ export const Navbar: React.FC = () => {
             : 'bg-[#F6EFE4]/60 backdrop-blur-sm py-4 sm:py-5 border-b border-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-2 sm:gap-4">
             {/* Brand Logo Lockup */}
             <a
               href="#"
-              className="flex flex-col items-center group text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C4A05A] rounded-lg px-2 py-1"
+              className="flex flex-col items-center group text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C4A05A] rounded-lg px-1 sm:px-2 py-1 shrink-0"
             >
-              <span className="font-display tracking-[0.25em] text-xl sm:text-2xl font-semibold text-[#1F4A5C] transition-colors group-hover:text-[#C4A05A]">
+              <span className="font-display tracking-[0.22em] sm:tracking-[0.25em] text-lg sm:text-2xl font-semibold text-[#1F4A5C] transition-colors group-hover:text-[#C4A05A]">
                 AMARII
               </span>
-              <div className="flex items-center gap-1.5 w-full justify-center">
-                <span className="h-[1px] w-3 bg-[#C4A05A]/60" />
-                <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.2em] text-[#8F7030] font-medium">
+              <div className="flex items-center gap-1 sm:gap-1.5 w-full justify-center">
+                <span className="h-[1px] w-2.5 sm:w-3 bg-[#C4A05A]/60" />
+                <span className="text-[9px] sm:text-[11px] font-sans uppercase tracking-[0.18em] sm:tracking-[0.2em] text-[#8F7030] font-medium whitespace-nowrap">
                   Beauty Spa
                 </span>
-                <span className="h-[1px] w-3 bg-[#C4A05A]/60" />
+                <span className="h-[1px] w-2.5 sm:w-3 bg-[#C4A05A]/60" />
               </div>
             </a>
 
@@ -119,8 +119,8 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="xl:hidden bg-[#F6EFE4] border-b border-[#C4A05A]/40 shadow-xl px-6 py-6 transition-all duration-300 mt-2 rounded-b-[28px]">
-            <nav className="flex flex-col space-y-3" aria-label="Navegação mobile">
+          <div className="xl:hidden bg-[#F6EFE4] border-b border-[#C4A05A]/40 shadow-xl px-5 py-5 transition-all duration-300 mt-2 rounded-b-[28px] max-h-[calc(100vh-76px)] overflow-y-auto">
+            <nav className="flex flex-col space-y-2.5" aria-label="Navegação mobile">
               {navLinks.map((link) => (
                 <a
                   key={link.href}

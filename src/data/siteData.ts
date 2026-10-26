@@ -108,7 +108,7 @@ export const siteData = {
       faciais: 'https://i.ibb.co/X6YTwWm/Editing-photo-environment-2-K-20261023070234.webp',
       corporais: 'https://i.ibb.co/mC3YMPGq/Editing-environment-photo-quality-2-K-20261023070441.webp',
       laser: 'https://i.ibb.co/QB5sw2J/Compare-before-and-after-photos-2-K-20261023063506.webp',
-      consulta: 'https://i.ibb.co/m5zRNSSv/Edit-environment-photo-quality-2-K-20261023070455.webp',
+      consulta: 'https://i.ibb.co/6JnD0NvZ/Improve-photo-quality-2-K-20261023071533.webp',
     },
     gallery: [
       { id: 1, url: 'https://i.ibb.co/QB5sw2J/Compare-before-and-after-photos-2-K-20261023063506.webp', altPt: 'Resultado real antes e depois 1 no AMARII Beauty Spa', altEn: 'Real treatment before and after comparison 1 at AMARII Beauty Spa' },
@@ -433,7 +433,7 @@ export const siteData = {
       price: '$0',
       duration: '30 min',
       category: 'consulta',
-      image: 'https://i.ibb.co/m5zRNSSv/Edit-environment-photo-quality-2-K-20261023070455.webp',
+      image: 'https://i.ibb.co/6JnD0NvZ/Improve-photo-quality-2-K-20261023071533.webp',
       featured: true,
     },
   ] as ServiceItem[],
